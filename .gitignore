@@ -4,4 +4,4 @@
 *.log
 *.vs/
 bin/
-obj/
+*obj/
