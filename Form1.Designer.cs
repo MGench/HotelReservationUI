@@ -33,12 +33,16 @@
             dtpCheckIn = new DateTimePicker();
             dtpCheckOut = new DateTimePicker();
             btnBook = new Button();
-            dataGridView1 = new DataGridView();
+            dataGridViewReservations = new DataGridView();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            label5 = new Label();
+            label6 = new Label();
+            comboBox1 = new ComboBox();
+            textBox1 = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)dataGridViewReservations).BeginInit();
             SuspendLayout();
             // 
             // txtGuestName
@@ -58,14 +62,14 @@
             // 
             // dtpCheckIn
             // 
-            dtpCheckIn.Location = new Point(119, 151);
+            dtpCheckIn.Location = new Point(119, 209);
             dtpCheckIn.Name = "dtpCheckIn";
             dtpCheckIn.Size = new Size(234, 23);
             dtpCheckIn.TabIndex = 2;
             // 
             // dtpCheckOut
             // 
-            dtpCheckOut.Location = new Point(119, 180);
+            dtpCheckOut.Location = new Point(119, 238);
             dtpCheckOut.Name = "dtpCheckOut";
             dtpCheckOut.Size = new Size(234, 23);
             dtpCheckOut.TabIndex = 3;
@@ -78,14 +82,15 @@
             btnBook.TabIndex = 4;
             btnBook.Text = "Reserve Room";
             btnBook.UseVisualStyleBackColor = true;
+            btnBook.Click += btnBook_Click;
             // 
-            // dataGridView1
+            // dataGridViewReservations
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(459, 77);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(329, 142);
-            dataGridView1.TabIndex = 5;
+            dataGridViewReservations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewReservations.Location = new Point(459, 77);
+            dataGridViewReservations.Name = "dataGridViewReservations";
+            dataGridViewReservations.Size = new Size(329, 142);
+            dataGridViewReservations.TabIndex = 5;
             // 
             // label1
             // 
@@ -109,7 +114,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(31, 157);
+            label3.Location = new Point(31, 215);
             label3.Name = "label3";
             label3.Size = new Size(50, 15);
             label3.TabIndex = 8;
@@ -118,22 +123,59 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(31, 180);
+            label4.Location = new Point(31, 238);
             label4.Name = "label4";
             label4.Size = new Size(60, 15);
             label4.TabIndex = 9;
             label4.Text = "CheckOut";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(31, 182);
+            label5.Name = "label5";
+            label5.Size = new Size(41, 15);
+            label5.TabIndex = 13;
+            label5.Text = "Phone";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(31, 147);
+            label6.Name = "label6";
+            label6.Size = new Size(36, 15);
+            label6.TabIndex = 12;
+            label6.Text = "Email";
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(119, 179);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(234, 23);
+            comboBox1.TabIndex = 11;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(119, 144);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(234, 23);
+            textBox1.TabIndex = 10;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label5);
+            Controls.Add(label6);
+            Controls.Add(comboBox1);
+            Controls.Add(textBox1);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(dataGridView1);
+            Controls.Add(dataGridViewReservations);
             Controls.Add(btnBook);
             Controls.Add(dtpCheckOut);
             Controls.Add(dtpCheckIn);
@@ -141,7 +183,8 @@
             Controls.Add(txtGuestName);
             Name = "Form1";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridViewReservations).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -153,10 +196,14 @@
         private DateTimePicker dtpCheckIn;
         private DateTimePicker dtpCheckOut;
         private Button btnBook;
-        private DataGridView dataGridView1;
+        private DataGridView dataGridViewReservations;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
+        private Label label5;
+        private Label label6;
+        private ComboBox comboBox1;
+        private TextBox textBox1;
     }
 }
