@@ -40,8 +40,8 @@
             label4 = new Label();
             label5 = new Label();
             label6 = new Label();
-            comboBox1 = new ComboBox();
-            textBox1 = new TextBox();
+            txtEmail = new TextBox();
+            txtPhoneNumber = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridViewReservations).BeginInit();
             SuspendLayout();
             // 
@@ -147,30 +147,29 @@
             label6.TabIndex = 12;
             label6.Text = "Email";
             // 
-            // comboBox1
+            // txtEmail
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(119, 179);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(234, 23);
-            comboBox1.TabIndex = 11;
+            txtEmail.Location = new Point(119, 144);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(234, 23);
+            txtEmail.TabIndex = 10;
             // 
-            // textBox1
+            // txtPhoneNumber
             // 
-            textBox1.Location = new Point(119, 144);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(234, 23);
-            textBox1.TabIndex = 10;
+            txtPhoneNumber.Location = new Point(119, 179);
+            txtPhoneNumber.Name = "txtPhoneNumber";
+            txtPhoneNumber.Size = new Size(234, 23);
+            txtPhoneNumber.TabIndex = 14;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtPhoneNumber);
             Controls.Add(label5);
             Controls.Add(label6);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox1);
+            Controls.Add(txtEmail);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -203,7 +202,7 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private ComboBox comboBox1;
-        private TextBox textBox1;
+        private TextBox txtEmail;
+        private TextBox txtPhoneNumber;
     }
 }
