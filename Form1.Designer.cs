@@ -87,9 +87,9 @@
             // dataGridViewReservations
             // 
             dataGridViewReservations.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewReservations.Location = new Point(459, 77);
+            dataGridViewReservations.Location = new Point(378, 77);
             dataGridViewReservations.Name = "dataGridViewReservations";
-            dataGridViewReservations.Size = new Size(329, 142);
+            dataGridViewReservations.Size = new Size(410, 184);
             dataGridViewReservations.TabIndex = 5;
             // 
             // label1
