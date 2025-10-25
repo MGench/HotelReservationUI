@@ -1,7 +1,48 @@
+# User-specific files
 *.user
 *.suo
+
+# Build and cache artifacts
 *.cache
 *.log
 *.vs/
 bin/
-*obj/
+obj/
+
+# Entity Framework Core migration snapshots (optional)
+# Uncomment if you want to exclude auto-generated snapshots
+# **/Migrations/*Snapshot.cs
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE-specific folders
+.vscode/
+.idea/
+
+# Test results and coverage
+TestResults/
+coverage/
+*.coverage
+*.coveragexml
+*.lcov
+
+# Backup and temp files
+*.bak
+*.tmp
+*.old
+*.orig
+*.swp
+*.swo
+*.swn
+*_backup/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Rider & VS Code workspace files
+*.sln.iml
+*.code-workspace
